@@ -11,6 +11,13 @@
 		1DE12B5728C0F87E005E1FFE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DE12B5628C0F87E005E1FFE /* ContentView.swift */; };
 		1DE12B5928C0F880005E1FFE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1DE12B5828C0F880005E1FFE /* Assets.xcassets */; };
 		1DE12B5C28C0F880005E1FFE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1DE12B5B28C0F880005E1FFE /* Preview Assets.xcassets */; };
+		1DE12B6528C0F903005E1FFE /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DE12B6428C0F903005E1FFE /* Store.swift */; };
+		1DE12B6728C148DC005E1FFE /* Middleware.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DE12B6628C148DC005E1FFE /* Middleware.swift */; };
+		1DE12B6928C148F8005E1FFE /* MiddlewareBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DE12B6828C148F8005E1FFE /* MiddlewareBuilder.swift */; };
+		1DE12B6B28C14909005E1FFE /* MiddlewarePipeline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DE12B6A28C14909005E1FFE /* MiddlewarePipeline.swift */; };
+		1DE12B6D28C1491C005E1FFE /* EchoMiddleware.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DE12B6C28C1491C005E1FFE /* EchoMiddleware.swift */; };
+		1DE12B7028C149B2005E1FFE /* LogMiddleware.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DE12B6F28C149B2005E1FFE /* LogMiddleware.swift */; };
+		1DE12B7228C14FB6005E1FFE /* LoginMiddleware.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DE12B7128C14FB6005E1FFE /* LoginMiddleware.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +26,13 @@
 		1DE12B5628C0F87E005E1FFE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		1DE12B5828C0F880005E1FFE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1DE12B5B28C0F880005E1FFE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		1DE12B6428C0F903005E1FFE /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
+		1DE12B6628C148DC005E1FFE /* Middleware.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Middleware.swift; sourceTree = "<group>"; };
+		1DE12B6828C148F8005E1FFE /* MiddlewareBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiddlewareBuilder.swift; sourceTree = "<group>"; };
+		1DE12B6A28C14909005E1FFE /* MiddlewarePipeline.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MiddlewarePipeline.swift; sourceTree = "<group>"; };
+		1DE12B6C28C1491C005E1FFE /* EchoMiddleware.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EchoMiddleware.swift; sourceTree = "<group>"; };
+		1DE12B6F28C149B2005E1FFE /* LogMiddleware.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogMiddleware.swift; sourceTree = "<group>"; };
+		1DE12B7128C14FB6005E1FFE /* LoginMiddleware.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginMiddleware.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +69,8 @@
 				1DE12B5628C0F87E005E1FFE /* ContentView.swift */,
 				1DE12B5828C0F880005E1FFE /* Assets.xcassets */,
 				1DE12B5A28C0F880005E1FFE /* Preview Content */,
+				1DE12B6428C0F903005E1FFE /* Store.swift */,
+				1DE12B6E28C14973005E1FFE /* Middleware */,
 			);
 			path = PostsRedux;
 			sourceTree = "<group>";
@@ -65,6 +81,19 @@
 				1DE12B5B28C0F880005E1FFE /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		1DE12B6E28C14973005E1FFE /* Middleware */ = {
+			isa = PBXGroup;
+			children = (
+				1DE12B6C28C1491C005E1FFE /* EchoMiddleware.swift */,
+				1DE12B6A28C14909005E1FFE /* MiddlewarePipeline.swift */,
+				1DE12B6828C148F8005E1FFE /* MiddlewareBuilder.swift */,
+				1DE12B6628C148DC005E1FFE /* Middleware.swift */,
+				1DE12B6F28C149B2005E1FFE /* LogMiddleware.swift */,
+				1DE12B7128C14FB6005E1FFE /* LoginMiddleware.swift */,
+			);
+			path = Middleware;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +166,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1DE12B6528C0F903005E1FFE /* Store.swift in Sources */,
+				1DE12B6928C148F8005E1FFE /* MiddlewareBuilder.swift in Sources */,
+				1DE12B7228C14FB6005E1FFE /* LoginMiddleware.swift in Sources */,
+				1DE12B6728C148DC005E1FFE /* Middleware.swift in Sources */,
+				1DE12B6D28C1491C005E1FFE /* EchoMiddleware.swift in Sources */,
+				1DE12B6B28C14909005E1FFE /* MiddlewarePipeline.swift in Sources */,
 				1DE12B5728C0F87E005E1FFE /* ContentView.swift in Sources */,
+				1DE12B7028C149B2005E1FFE /* LogMiddleware.swift in Sources */,
 				1DE12B5528C0F87E005E1FFE /* PostsReduxApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
